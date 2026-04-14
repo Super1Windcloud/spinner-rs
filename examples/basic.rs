@@ -1,6 +1,6 @@
 use std::{io, thread, time::Duration};
 
-use ora_rs::Spinner;
+use spinner_rs::Spinner;
 
 fn main() -> io::Result<()> {
     let mut spinner = Spinner::new("Preparing workspace");

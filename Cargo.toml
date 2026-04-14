@@ -1,7 +1,16 @@
 [package]
-name = "ora-rs"
+name = "spinner-rs"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.94"
+description = "A lightweight terminal spinner library for Rust CLI applications"
+readme = "README.md"
+license = "MIT"
+keywords = ["spinner", "terminal", "cli", "progress"]
+categories = ["command-line-interface", "command-line-utilities"]
+exclude = [".idea/*", "target/*", "Cargo.toml.orig"]
+homepage = "https://github.com/super1windcloud/spinner-rs"
+
 
 [dependencies]
 crossterm = "0.29.0"

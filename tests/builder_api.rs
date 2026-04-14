@@ -1,6 +1,6 @@
 use std::{thread, time::Duration};
 
-use ora_rs::{Color, Spinner, SpinnerBuilder, SpinnerStyle, Stream};
+use spinner_rs::{Color, Spinner, SpinnerBuilder, SpinnerStyle, Stream};
 
 #[test]
 fn builder_creates_spinner_with_expected_snapshot() {

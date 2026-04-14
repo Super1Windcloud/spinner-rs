@@ -52,7 +52,11 @@ pub struct SpinnerStyle {
 }
 
 impl SpinnerStyle {
-    pub fn new(interval: Duration, frames: impl IntoIterator<Item = impl Into<String>>) -> Self {
+    pub fn new<I, S>(interval: Duration, frames: I) -> Self
+    where
+        I: IntoIterator<Item = S>,
+        S: Into<String>,
+    {
         Self {
             interval,
             frames: frames.into_iter().map(Into::into).collect(),

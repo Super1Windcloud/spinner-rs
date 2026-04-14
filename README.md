@@ -15,10 +15,7 @@ A lightweight Rust spinner library for terminal applications. It helps you show 
 
 ## Installation
 
-```toml
-[dependencies]
-ora-rs = { path = "." }
-```
+`cargo add  spinner-rs`
 
 Until the crate is published, use it as a local path dependency.
 
@@ -27,7 +24,7 @@ Until the crate is published, use it as a local path dependency.
 ```rust
 use std::{io, thread, time::Duration};
 
-use ora_rs::Spinner;
+use spinner_rs::Spinner;
 
 fn main() -> io::Result<()> {
     let mut spinner = Spinner::new("Connecting to service");
@@ -48,7 +45,7 @@ fn main() -> io::Result<()> {
 ```rust
 use std::{io, thread, time::Duration};
 
-use ora_rs::{Color, Spinner, SpinnerStyle, Stream};
+use spinner_rs::{Color, Spinner, SpinnerStyle, Stream};
 
 fn main() -> io::Result<()> {
     let mut spinner = Spinner::builder()

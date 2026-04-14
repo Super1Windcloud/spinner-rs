@@ -1,4 +1,4 @@
-use ora_rs::{Color, Spinner};
+use spinner_rs::{Color, Spinner};
 
 #[test]
 fn status_methods_replace_text_and_stop_spinner() {

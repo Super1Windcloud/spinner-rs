@@ -1,6 +1,6 @@
 use std::{io, thread, time::Duration};
 
-use ora_rs::{Color, Spinner, SpinnerStyle, Stream};
+use spinner_rs::{Color, Spinner, SpinnerStyle, Stream};
 
 fn main() -> io::Result<()> {
     let mut spinner = Spinner::builder()
