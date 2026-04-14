@@ -15,10 +15,7 @@
 
 ## 安装
 
-```toml
-[dependencies]
-ora-rs = { path = "." }
-```
+cargo add spinner-rs
 
 在发布到 crates.io 之前，建议先使用本地路径依赖。
 
